@@ -1,0 +1,38 @@
+/* Ensure full-page height and flex layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main container styling */
+.container {
+    flex: 1; /* Makes the container take up available space */
+}
+
+/* Card styling */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    flex: 1;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.card-body i {
+    color: #303f9f; /* Icon color */
+}
+
+/* Footer styling */
+footer {
+    background-color: #303f9f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
